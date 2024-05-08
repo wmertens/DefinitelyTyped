@@ -94,7 +94,6 @@ const featureWithPolygon: Feature<Polygon> = {
             ],
         ],
     },
-    properties: null,
 };
 
 featureWithPolygon.type; // $ExpectType "Feature"
@@ -260,32 +259,27 @@ feature.properties; // $ExpectType GeoJsonProperties
 feature = {
     type: "Feature",
     geometry: polygon,
-    properties: null,
+    properties: undefined,
 };
 feature = {
     type: "Feature",
     geometry: polygonWithHole,
-    properties: null,
 };
 feature = {
     type: "Feature",
     geometry: multiPoint,
-    properties: null,
 };
 feature = {
     type: "Feature",
     geometry: multiLineString,
-    properties: null,
 };
 feature = {
     type: "Feature",
     geometry: multiPolygon,
-    properties: null,
 };
 feature = {
     type: "Feature",
     geometry: geometryCollection,
-    properties: null,
 };
 
 featureCollection = {
