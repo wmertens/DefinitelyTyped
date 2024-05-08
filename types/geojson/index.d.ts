@@ -132,7 +132,7 @@ export interface GeometryCollection<G extends Geometry = Geometry> extends GeoJs
     geometries: G[];
 }
 
-export type GeoJsonProperties = { [name: string]: any } | null;
+export type GeoJsonProperties = { [name: string]: any } | null | undefined;
 
 /**
  * A feature object which contains a geometry and associated properties.
@@ -152,7 +152,7 @@ export interface Feature<G extends Geometry | null = Geometry, P = GeoJsonProper
     /**
      * Properties associated with this feature.
      */
-    properties: P;
+    properties?: P;
 }
 
 /**
